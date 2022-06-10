@@ -7,24 +7,124 @@ body {
 a {
     text-decoration: none;
 }
-ul {
-    list-style-type: none;
-}
 h1 {
     font-size: 80px;
     font-weight: 600;
     color: #192b59;
+    max-width: 540px;
+    line-height: 1.12;
+    letter-spacing: -2.5px;
+    margin-bottom: 64px;
+}
+.title-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+.title-h2 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    margin-bottom: 13.5px;
+    letter-spacing: 3px;
+}
+.title-40 {
+    font-size: 40px;
+    letter-spacing: -1.1px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    margin-bottom: 32px;
+}
+.title-40 span{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+}
+.page-stat .title-h2, .page-screen .title-h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+.page-stat .title-h2 {
+    max-width: 500px;
+}
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .nav {
     font-size: 12px;
     font-weight: 700;
-    color: #6e7ea9;
     text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav>li {
+    padding: 0 15px;
+}
+.nav-item {
+    color: #6e7ea9;
+}
+.btn-primary {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #1085e4;
+    border:1px solid #1085e4;
+    text-transform: uppercase;
+    padding: 20.5px 43px;
+    border-radius: 30px;
+}
+.btn-primary:hover {
+    color: #1085e4;
+    background-color: #fff;
+}
+.btn-secondary {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #7e8bae;
+    background-color: #cbdbe8;
+    border:1px solid #cbdbe8;
+    text-transform: uppercase;
+    padding: 20.5px 41.5px;
+    border-radius: 30px;
+}
+.btn-secondary:hover {
+    background-color: #fff;
 }
 .btn-free {
-    color: #fff;
     font-weight: 400;
-    background-color: #1085e4;
+    padding: 21.5px 54.5px;
+}
+.btn-info {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8085b1;
+    background-color: transparent;
+    border: 1px solid #dce1e5;
+    padding: 20.5px 41.5px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.btn-info:hover {
+    background-color: #aad9ff;
+}
+.btn-group a + a{
+    margin-left: 15px;
 }
 .grid h2 {
     font-size: 40px;
@@ -46,20 +146,6 @@ h1 {
     font-size: 14px;
     font-weight: 600;
     color: #1085e4;
-}
-.btn-blue {
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1085e4;
-    text-transform: uppercase;
-}
-.btn-gray {
-    font-size: 12px;
-    font-weight: 700;
-    color: #7e8bae;
-    background-color: #cbdbe8;
-    text-transform: uppercase;
 }
 .subscribe-title h2 {
     font-size: 50px;
@@ -91,32 +177,11 @@ dt {
     font-weight: 700;
     color: #5a6789;
 }
-.stat h2 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #192b59;
-    line-height: 60px;
-}
-.stat h2 span {
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: 0.15em;
-    color: #1085e4;
-    text-transform: uppercase;
-    display: block;
-}
-.stat-item li {
+.list-stat li {
     font-size: 12px;
     font-weight: 700;
     color: #1085e4;
     line-height: 30px;
-}
-.stat-item li span {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 30px;
-    color: #bacbdc;
-    display: block;
 }
 .app h2 {
     font-size: 50px;
@@ -157,4 +222,91 @@ dt {
     color: #1085e4;
     text-transform: uppercase;
     display: block;
+}
+.list-stat {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 76px;
+}
+.list-stat>li {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #1085e4;
+    text-transform: uppercase;
+    text-align: center;
+}
+.list-stat>li>span {
+    display: block;
+    font-size: 60px;
+    line-height: 30px;
+    color: #bacbdc;
+    margin-bottom: 23px;
+    letter-spacing: 0;
+}
+.screen {
+    margin-top: 36px;
+    margin-bottom: -7px;
+}
+.box-price {
+    display: flex;
+    justify-content: space-around;
+}
+.box-price-item {
+    background-color: #f5faff;
+}
+.box-price-item h3 {
+    font-size: 70px;
+    color: #000958;
+    margin-bottom: 15px;
+}
+.box-price-item:first-child h3 {
+    margin-bottom: 35px;
+}
+.box-price-item span {
+    font-size: 20px;
+}
+.box-price-item span + span {
+    color: #7b8ab2;
+}
+.box-price-item ul {
+    font-size: 14px;
+    margin: 0;
+}
+.box-price-item ul li {
+    margin-bottom: 20px;
+}
+.box-price-item.active {
+    background-color: #192b59;
+    color: #fff;
+}
+.box-price-item ul {
+    font-size: 14px;
+    list-style-type: none;
+    padding-left: 0;
+}
+.box-price-item.active h3 {
+    color: #fff;
+} 
+.box-price-item.active strong {
+    color: #fff;
+} 
+strong {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0084ff;
+    letter-spacing: 2.3px;
+}
+.page-stat, .page-screen {
+    background-color: #edf6ff;
+}
+.page-stat {
+    padding: 116px 0 96px 0;
+}
+.page-plan, .page-screen {
+    text-align: center;
+}
+.page-screen {
+    padding: 84px 0 0 0;
 }

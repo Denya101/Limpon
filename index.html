@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Limpon</title>
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" data-mce-href="img/favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" data-mce-href="img/favicon/apple-touch-icon-60x60.png">
@@ -26,22 +26,24 @@
 </head>
 <body>
     <div class="page-header">
-        <div>
+        <div class="wrap">
             <a href=""></a>
             <ul class="nav">
-                <li>Home</li>
-                <li>Features</li>
-                <li>Video</li>
-                <li>Screens</li>
-                <li>Pricing</li>
-                <li>Team</li>
-                <li><a href="" class="btn-free">Free Trail</a></li>
+                <li><a href="" class="nav-item">Home</a></li>
+                <li><a href="" class="nav-item">Features</a></li>
+                <li><a href="" class="nav-item">Video</a></li>
+                <li><a href="" class="nav-item">Screens</a></li>
+                <li><a href="" class="nav-item">Pricing</a></li>
+                <li><a href="" class="nav-item">Team</a></li>
+                <li><a href="" class="btn-primary btn-free">Free Trail</a></li>
             </ul>
         </div>
-        <h1>Best Software Landingpage</h1>
-        <div>
-            <a href="" class="btn-blue">get started now</a>
-            <a href="" class="btn-gray">learn more</a>
+        <div class="wrap">
+            <h1>Best Software Landingpage</h1>
+        <div class="btn-group">
+            <a href="" class="btn-primary">get started now</a>
+            <a href="" class="btn-secondary">learn more</a>
+        </div>
         </div>
     </div>
 
@@ -101,12 +103,12 @@
     </div>
 
     <div class="page-subscribe">
-        <div>
+        <div class="wrap">
             <div class="subscribe">
                 <h2><span>Subscribe</span>Signup For A Trail</h2>
                 <p>Create your free account now & get 30 days free trail No credit card required</p>
                 <input type="email" placeholder="Enter your email address">
-                <button type="submit">Subscribe</button>
+                <button type="submit" class="btn-primary">Subscribe</button>
             </div>
             <img src="img/robot.png" alt="Robot">
         </div>
@@ -127,9 +129,9 @@
     </div>
 
     <div class="page-stat">
-        <div class="stat">
-            <h2><span>Fun Facts</span>Some Fun Facts About Dashboard</h2>
-            <ul class="stat-item">
+        <div class="wrap">
+            <h2 class="title-h2"><span>Fun Facts</span>Some Fun Facts About Dashboard</h2>
+            <ul class="list-stat">
                 <li><span>53K</span>Layouts</li>
                 <li><span>10K</span>projects</li>
                 <li><span>12K</span>cup coffee</li>
@@ -159,7 +161,7 @@
             <div class="analytics">
                 <h2>Limpon Is Suitable For Anytype LandingPage</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                <a href="">Get started now</a>
+                <a href="" class="btn-primary">Get started now</a>
             </div>
         </div>
     </div>
@@ -169,86 +171,102 @@
             <div class="analytics">
                 <h2>Easy To Etid & Very Easily Control</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                <a href="">learn more</a>
+                <a href="" class="btn-primary">learn more</a>
             </div>
             <img src="img/stat_year.png" alt="">
         </div>
     </div>
 
     <div class="page-screen">
-        <h2><span>screen preview</span>Screenshot With Details</h2>
-        <img src="" alt="">
+        <h2 class="title-40"><span>screen preview</span>Screenshot With Details</h2>
+        <img src="img/screenshot.png" alt="Screen" class="screen">
     </div>
     <div class="page-clients">
-        <h2><span>testimonials</span>Our Happy Clients</h2>
-        <div class="box-clients">
-            <div>
-                <p>It is a long established fact that a read her will be distracted by the readable content of a page when looking.</p>
-                <p class="name">Rolin B. Mirano</p>
-                <p class="position">ceo, uihub</p>
+        <div class="wrap">
+            <h2><span>testimonials</span>Our Happy Clients</h2>
+            <div class="box-clients">
+                <div>
+                    <p>It is a long established fact that a read her will be distracted by the readable content of a page when looking.</p>
+                    <p class="name">Rolin B. Mirano</p>
+                    <p class="position">ceo, uihub</p>
+                </div>
+                <div>
+                    <p>It is a long established fact that a read her will be distracted by the readable content of a page when looking.</p>
+                    <p class="name">Rolin B. Mirano</p>
+                    <p class="position">ceo, uihub</p>
+                </div>
+                <div>
+                    <p>It is a long established fact that a read her will be distracted by the readable content of a page when looking.</p>
+                    <p class="name">Rolin B. Mirano</p>
+                    <p class="position">ceo, uihub</p>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="page-plan">
-        <h2><span>our plans</span>Pricing Plans</h2>
-        <div class="box-price">
-            <div class="box-price-item">
-                <h3>Free</h3>
-                <p><strong>starter</strong></p>
-                <ul>
-                    <li>Unlimited users Active</li>
-                    <li>1 GB Bandwidth Speed</li>
-                    <li>256 MB Memory Card</li>
-                    <li>Free Domain Name</li>
-                    <li>Free Hosting Name</li>
-                    <li>24x7 Online Support</li>
-                </ul>
-                <a href="">Choose Plan</a>
-            </div>
-            <div class="box-price-item active">
-                <h3><span>$</span>90<span>/mo</span></h3>
-                <p><strong>starter</strong></p>
-                <ul>
-                    <li>Unlimited users Active</li>
-                    <li>1 GB Bandwidth Speed</li>
-                    <li>256 MB Memory Card</li>
-                    <li>Free Domain Name</li>
-                    <li>Free Hosting Name</li>
-                    <li>24x7 Online Support</li>
-                </ul>
-                <a href="">Choose Plan</a>
-            </div>
-            <div class="box-price-item">
-                <h3><span>$</span>350<span>/mo</span></h3>
-                <p><strong>starter</strong></p>
-                <ul>
-                    <li>Unlimited users Active</li>
-                    <li>1 GB Bandwidth Speed</li>
-                    <li>256 MB Memory Card</li>
-                    <li>Free Domain Name</li>
-                    <li>Free Hosting Name</li>
-                    <li>24x7 Online Support</li>
-                </ul>
-                <a href="">Choose Plan</a>
+        <div class="wrap">
+                <h2 class="title-40"><span>our plans</span>Pricing Plans</h2>
+            <div class="box-price">
+                <div class="box-price-item">
+                    <h3>Free</h3>
+                    <p><strong>starter</strong></p>
+                    <ul>
+                        <li>Unlimited users Active</li>
+                        <li>1 GB Bandwidth Speed</li>
+                        <li>256 MB Memory Card</li>
+                        <li>Free Domain Name</li>
+                        <li>Free Hosting Name</li>
+                        <li>24x7 Online Support</li>
+                    </ul>
+                    <a href="" class="btn-info">Choose Plan</a>
+                </div>
+                <div class="box-price-item active">
+                    <h3><span>$</span>90<span>/mo</span></h3>
+                    <p><strong>starter</strong></p>
+                    <ul>
+                        <li>Unlimited users Active</li>
+                        <li>1 GB Bandwidth Speed</li>
+                        <li>256 MB Memory Card</li>
+                        <li>Free Domain Name</li>
+                        <li>Free Hosting Name</li>
+                        <li>24x7 Online Support</li>
+                    </ul>
+                    <a href="" class="btn-primary">Choose Plan</a>
+                </div>
+                <div class="box-price-item">
+                    <h3><span>$</span>350<span>/mo</span></h3>
+                    <p><strong>starter</strong></p>
+                    <ul>
+                        <li>Unlimited users Active</li>
+                        <li>1 GB Bandwidth Speed</li>
+                        <li>256 MB Memory Card</li>
+                        <li>Free Domain Name</li>
+                        <li>Free Hosting Name</li>
+                        <li>24x7 Online Support</li>
+                    </ul>
+                    <a href="" class="btn-info">Choose Plan</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="page-team">
-        <h2><span>angels</span>Our Team</h2>
-        <div class="box-team">
-            <div>
-                <p>founder</p>
-                <p>Ricardo T. Obrien</p>
-            </div>
-            <div>
-                <p>ceo</p>
-                <p>Alberto Del Rio</p>
-            </div>
-            <div>
-                <p>designer</p>
-                <p>Thomas Alva Adison</p>
+        <div class="wrap">
+            <h2 class="title-h2"><span>angels</span>Our Team</h2>
+            <div class="box-team">
+                <div>
+                    <p>founder</p>
+                    <p>Ricardo T. Obrien</p>
+                </div>
+                <div>
+                    <p>ceo</p>
+                    <p>Alberto Del Rio</p>
+                </div>
+                <div>
+                    <p>designer</p>
+                    <p>Thomas Alva Adison</p>
+                </div>
             </div>
         </div>
     </div>
